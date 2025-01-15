@@ -15,6 +15,7 @@ COPY . .
 
 # Instalar dependencias de Symfony
 RUN composer install --no-scripts --no-interaction --no-dev --optimize-autoloader
+RUN composer update
 
 EXPOSE 8000
 
